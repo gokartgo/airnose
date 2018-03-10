@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_fragment_main">24dp</dimen>
+    <dimen name="margin_top_fragment_main">12dp</dimen>
+    <dimen name="bottom_margin_background_activity">100dp</dimen>
+    <dimen name="fragment_padding">8dp</dimen>
+    <dimen name="text_size_fragment_smell_time">18sp</dimen>
+    <dimen name="text_size_fragment_sent_information">18sp</dimen>
+    <dimen name="dialog_smell_feel_text_size">24sp</dimen>
+    <dimen name="dialog_image_margin_bottom">12dp</dimen>
+    <dimen name="fragment_main_button_margin_bottom">12dp</dimen>
+    <dimen name="fragment_sent_information_padding">8dp</dimen>
+</resources>

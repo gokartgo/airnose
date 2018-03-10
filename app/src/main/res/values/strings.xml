@@ -1,0 +1,75 @@
+<resources>
+    <!-- log in -->
+    <string name="for_user">ผู้ใช้ทั่วไป</string>
+    <string name="login_for_user">เข้าใช้งานสำหรับผู้ใช้ทั่วไป</string>
+    <string name="for_admin">ผู้ดูแล</string>
+    <string name="id_admin">ID Admin</string>
+    <string name="password_admin">Password Admin</string>
+    <string name="login_for_admin">เข้าใช้สำหรับผู้ดูแล</string>
+
+
+    <!-- main fragment smell -->
+    <string name="app_name">Airnose</string>
+    <string name="smell_oil">กลิ่นน้ำมัน</string>
+    <string name="smell_gas">กลิ่นแก๊ส</string>
+    <string name="smell_burn_tire">กลิ่นยางไหม้</string>
+    <string name="smell_hair_dye">กลิ่นน้ำยาย้อมผม</string>
+    <string name="smell_ammonia">กลิ่นแอมโมเนีย</string>
+    <string name="smell_food">กลิ่นอาหาร</string>
+    <string name="smell_chemical">กลิ่นเคมี</string>
+    <string name="smell_grass">กลิ่นหญ้า</string>
+    <string name="smell_fruit">กลิ่นผลไม้</string>
+    <string name="smell_rotten">กลิ่นน้ำเน่า</string>
+    <string name="smell_fish">กลิ่นปลา</string>
+    <string name="smell_garbage">กลิ่นขยะ</string>
+    <string name="smell_car_smoke">กลิ่นควันรถ</string>
+    <string name="smell_vinegar">กลิ่นน้ำส้มสายชู</string>
+    <string name="smell_sapodilla">กลิ่นละมุด</string>
+    <string name="smell_chlorine">กลิ่นคลอรีน</string>
+    <string name="smell_marigold">กลิ่นดาวเรือง</string>
+    <string name="smell_liquid">กลิ่นลิควิด</string>
+    <string name="smell_iron">กลิ่นเหล็ก</string>
+    <string name="smell_glue">กลิ่นกาว</string>
+    <string name="none_smell">ไม่มีกลิ่น</string>
+    <string name="what_are_your_smelling">คุณกำลังได้กลิ่นอะไร</string>
+    <string name="other_details">รายละเอียดอื่นๆ : </string>
+    <string name="input_other_details">ใส่รายละเอียดหรือกลิ่นอื่นๆ</string>
+    <string name="dialog_smell_feel_cancel">ยกเลิก</string>
+    <string name="dialog_smell_feel_confirm">ตกลง</string>
+    <string name="main_fragment_button_confirm">ตกลง</string>
+
+
+    <!-- fragment time -->
+    <string name="less_than_1_minute">น้อยกว่า 1 นาที</string>
+    <string name="more_than_1_minute">มากกว่า 1 นาที</string>
+    <string name="more_than_15_minute">มากกว่า 15 นาที</string>
+    <string name="more_than_30_minute">มากกว่า 30 นาที</string>
+    <string name="more_than_45_minute">มากกว่า 45 นาที</string>
+    <string name="more_than_1_hour">มากกว่า 1 ชั่วโมง</string>
+    <string name="how_long_your_smell">คุณได้กลิ่นมานานเท่าไหร่ ?</string>
+    <string name="set_time">ตั้งเวลา</string>
+
+    <!-- fragment level -->
+    <string name="the_intensity_of_the_smell">ความรุนแรงของกลิ่น ?</string>
+    <string name="smell_very_light">กลิ่นเบาบางมาก</string>
+    <string name="smell_light">กลิ่นเบาบาง</string>
+    <string name="smell_strong">กลิ่นแรง</string>
+    <string name="smell_very_strong">กลิ่นแรงมาก</string>
+
+
+    <!-- sent information fragment -->
+    <string name="map_error">กรุณาเปิด location</string>
+    <string name="title_activity_maps">แผนที่</string>
+    <string name="type_of_smell">รูปแบบของกลิ่น</string>
+    <string name="detail_other">รายละเอียดอื่นๆ</string>
+    <string name="time_sent_information">เวลา</string>
+    <string name="duration_of_smell">ระยะเวลาของกลิ่น</string>
+    <string name="smell_level">ระดับของกลิ่น</string>
+    <string name="sent_information">ส่งข้อมูล</string>
+
+    <!-- gps detect -->
+    <string name="gps_alert_dialog_open">gps ของคุณยังไม่ได้ถูกเปิดใช้งาน กรุณาเปิดการใช้งาน gps เพื่อระบุตำแหน่ง</string>
+    <string name="gps_open_yes">ตกลง</string>
+    <string name="gps_open_no">ยกเลิก</string>
+
+</resources>

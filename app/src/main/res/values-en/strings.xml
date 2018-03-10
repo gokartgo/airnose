@@ -1,0 +1,72 @@
+<resources>
+    <!-- log in -->
+    <string name="for_user">For User</string>
+    <string name="login_for_user">login for user</string>
+    <string name="for_admin">For Admin</string>
+    <string name="id_admin">ID Admin</string>
+    <string name="password_admin">Password Admin</string>
+    <string name="login_for_admin">login for Admin</string>
+
+    <!-- main fragment smell -->
+    <string name="app_name">Airnose</string>
+    <string name="smell_oil">smell oil</string>
+    <string name="smell_gas">smell gas</string>
+    <string name="smell_burn_tire">smell burn tire</string>
+    <string name="smell_hair_dye">smell hair dye</string>
+    <string name="smell_ammonia">smell ammonia</string>
+    <string name="smell_food">smell food</string>
+    <string name="smell_chemical">smell chemical</string>
+    <string name="smell_grass">smell grass</string>
+    <string name="smell_fruit">smell fruit</string>
+    <string name="smell_rotten">smell rotten</string>
+    <string name="smell_fish">smell fish</string>
+    <string name="smell_garbage">smell garbage</string>
+    <string name="smell_car_smoke">smell car smoke</string>
+    <string name="smell_vinegar">smell vinegar</string>
+    <string name="smell_sapodilla">smell sapodilla</string>
+    <string name="smell_chlorine">smell chlorine</string>
+    <string name="smell_marigold">smell marigold</string>
+    <string name="smell_liquid">smell liquid</string>
+    <string name="smell_iron">smell iron</string>
+    <string name="smell_glue">smell glue</string>
+    <string name="none_smell">none smell</string>
+    <string name="what_are_your_smelling">what are your smelling</string>
+    <string name="other_details">other details : </string>
+    <string name="input_other_details">details</string>
+    <string name="dialog_smell_feel_cancel">cancel</string>
+    <string name="dialog_smell_feel_confirm">confirm</string>
+    <string name="main_fragment_button_confirm">confirm</string>
+
+    <!-- fragment time -->
+    <string name="less_than_1_minute">less than 1 minute</string>
+    <string name="more_than_1_minute">more than 1 minute</string>
+    <string name="more_than_15_minute">more than 15 minute</string>
+    <string name="more_than_30_minute">more than 30 minute</string>
+    <string name="more_than_45_minute">more than 45 minute</string>
+    <string name="more_than_1_hour">more than 1 hour</string>
+    <string name="how_long_your_smell">How long have you been smell ?</string>
+    <string name="set_time">Set Time</string>
+
+    <!-- fragment level -->
+    <string name="the_intensity_of_the_smell">The intensity of the smell ?</string>
+    <string name="smell_very_light">smell very light</string>
+    <string name="smell_light">smell light</string>
+    <string name="smell_strong">smell strong</string>
+    <string name="smell_very_strong">smell very strong</string>
+
+    <!-- sent information fragment -->
+    <string name="map_error">please open location</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="type_of_smell">Type Of Smell</string>
+    <string name="detail_other">other details</string>
+    <string name="time_sent_information">time</string>
+    <string name="duration_of_smell">Duration Of Smell</string>
+    <string name="smell_level">Smell Level</string>
+    <string name="sent_information">sent information</string>
+
+
+    <!-- gps detect -->
+    <string name="gps_alert_dialog_open">Your GPS seems to be disabled, do you want to enable it?</string>
+    <string name="gps_open_yes">Yes</string>
+    <string name="gps_open_no">No</string>
+</resources>

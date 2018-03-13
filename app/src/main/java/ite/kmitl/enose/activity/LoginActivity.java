@@ -60,7 +60,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this,AdminActivity.class);
                     startActivity(intent);
                 }
-                if(edIdAdmin.getText().toString().equals("staff") && edPasswordAdmin.getText().toString().equals("1234")){
+                else if(edIdAdmin.getText().toString().equals("staff") && edPasswordAdmin.getText().toString().equals("1234")){
                     Intent intent = new Intent(LoginActivity.this,StaffActivity.class);
                     startActivity(intent);
                 }

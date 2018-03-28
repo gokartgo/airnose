@@ -49,6 +49,8 @@ public class AdminActivity extends AppCompatActivity {
         ) {
             @Override
             protected void populateViewHolder(UserInformationViewHolder viewHolder, UserInformationData model, int position) {
+                viewHolder.setName(model.getName());
+                viewHolder.setPhone(model.getPhone());
                 viewHolder.setComment(model.getComment());
                 viewHolder.setDate(model.getDate());
                 viewHolder.setDuration(model.getDuration());

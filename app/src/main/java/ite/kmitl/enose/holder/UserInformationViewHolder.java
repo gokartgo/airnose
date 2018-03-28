@@ -21,6 +21,16 @@ public class UserInformationViewHolder extends RecyclerView.ViewHolder {
         mView = itemView;
     }
 
+    public void setName(String text) {
+        TextView tvName = (TextView) mView.findViewById(R.id.tvName);
+        tvName.setText("Name : "+text);
+    }
+
+    public void setPhone(String text) {
+        TextView tvPhone = (TextView) mView.findViewById(R.id.tvPhone);
+        tvPhone.setText("Phone : "+text);
+    }
+
     public void setComment(String text) {
         TextView tvComment = (TextView) mView.findViewById(R.id.tvComment);
         tvComment.setText("Comment : "+text);

@@ -86,8 +86,10 @@ public class FragmentSentInformation extends Fragment implements OnMapReadyCallb
     //sent information
     String information = "";
     String[] sentInfor;
-    String smell, comment, duration, time, level, location, date;
+    String name,phone,smell, comment, duration, time, level, location, date;
     String sentInformation;
+    TextView tvName;
+    TextView tvPhone;
     TextView tvTypeSmell;
     TextView tvComment;
     TextView tvTime;
@@ -153,6 +155,8 @@ public class FragmentSentInformation extends Fragment implements OnMapReadyCallb
             mapView.onResume();
             mapView.getMapAsync(this);
         }
+        tvName = (TextView) rootView.findViewById(R.id.tvName);
+        tvPhone = (TextView) rootView.findViewById(R.id.tvPhone);
         tvTypeSmell = (TextView) rootView.findViewById(R.id.tvTypeSmell);
         tvComment = (TextView) rootView.findViewById(R.id.tvComment);
         tvTime = (TextView) rootView.findViewById(R.id.tvTime);
@@ -168,12 +172,16 @@ public class FragmentSentInformation extends Fragment implements OnMapReadyCallb
         for (int i = 0; i < sentInfor.length; i++) {
             sentInfor[i] = sentInfor[i].replace("_", " ");
         }
-        smell = sentInfor[0];
-        comment = sentInfor[1];
-        duration = sentInfor[2];
-        time = sentInfor[3];
-        level = sentInfor[4];
+        name = sentInfor[0];
+        phone = sentInfor[1];
+        smell = sentInfor[2];
+        comment = sentInfor[3];
+        duration = sentInfor[4];
+        time = sentInfor[5];
+        level = sentInfor[6];
 
+        tvName.setText(name);
+        tvPhone.setText(phone);
         tvTypeSmell.setText(smell);
         tvComment.setText(comment);
         tvDurationSmell.setText(duration);
@@ -360,12 +368,14 @@ public class FragmentSentInformation extends Fragment implements OnMapReadyCallb
     final View.OnClickListener btnSentClick = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            sentInformation = "smell : " + smell + "\ncomment : " + comment +
+            sentInformation = "name : "+name+"\nphone : "+phone+"\nsmell : " + smell + "\ncomment : " + comment +
                     "\nduration : " + duration + "\ntime : " + time + "\nlevel : " + level + "\nlocation : " + strLatLng;
             if (view == btnSentInformation) {
                 Toast.makeText(getContext(), sentInformation, Toast.LENGTH_LONG).show();
 
                 DatabaseReference id = databaseRef.push();
+                id.child("name").setValue(name);
+                id.child("phone").setValue(phone);
                 id.child("comment").setValue(comment);
                 id.child("duration").setValue(duration);
                 id.child("level").setValue(level);

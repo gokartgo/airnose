@@ -9,6 +9,8 @@
 
     <!-- main fragment smell -->
     <string name="app_name">Airnose</string>
+    <string name="name_surname">name-surname</string>
+    <string name="phone">phone number</string>
     <string name="smell_oil">smell oil</string>
     <string name="smell_gas">smell gas</string>
     <string name="smell_burn_tire">smell burn tire</string>

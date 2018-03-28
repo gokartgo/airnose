@@ -20,6 +20,7 @@ import ite.kmitl.enose.R;
 @SuppressWarnings("unused")
 public class MainFragment extends Fragment {
 
+    EditText edName,edPhone;
     ImageButton imageBtnOil,imageBtnGas,imageBtnBurnTire,imageBtnSmellLiquid,imageBtnHairDye,imageBtnAmmonia
             ,imageBtnFood,imageBtnChemical,imageBtnGrass,imageBtnFruit,imageBtnRotten,imageBtnFish
             ,imageBtnGarbage,imageBtnCarSmoke,imageBtnVinegar,imageBtnSapodilla,imageBtnChlorine,imageBtnGlue
@@ -33,6 +34,8 @@ public class MainFragment extends Fragment {
     TextView tvDialogSmellFeel;
     Button btnDialogCancel,btnDialogConfirm;
 
+    String name = "";
+    String phone = "";
     String smell = "";
     String details = "";
     String smellDetails = "";
@@ -73,6 +76,9 @@ public class MainFragment extends Fragment {
     @SuppressWarnings("UnusedParameters")
     private void initInstances(View rootView, Bundle savedInstanceState) {
         // Init 'View' instance(s) with rootView.findViewById here
+        // find edittext name and phone
+        edName = (EditText) rootView.findViewById(R.id.edName);
+        edPhone = (EditText) rootView.findViewById(R.id.edPhone);
         // find button id
         imageBtnOil = (ImageButton) rootView.findViewById(R.id.imageBtnOil);
         imageBtnGas = (ImageButton) rootView.findViewById(R.id.imageBtnGas);
@@ -291,12 +297,14 @@ public class MainFragment extends Fragment {
     };
 
     public void sentValueNextFragment(){
+        name = edName.getText().toString().replace(" ","_");
+        phone = edPhone.getText().toString().replace(" ","_");
         smell = smell.replace(" ","_");
         details = edOtherDetails.getText().toString().replace(" ","_");
         if(details.trim().equals("")){
             details = "-";
         }
-        smellDetails = smell+" "+details;
+        smellDetails = name+" "+phone+" "+smell+" "+details;
         getFragmentManager().beginTransaction()
                 .replace(R.id.contentContainer,FragmentSmellTime.newInstance(smellDetails),"FragmentSmellTime")
                 .addToBackStack(null)

@@ -125,6 +125,7 @@ public class UserInformationViewHolder extends RecyclerView.ViewHolder {
             public void onClick(View view) {
                 if(check == 1) {
                     databaseReference.removeValue();
+                    Toast.makeText(mView.getContext(),"ลบข้อมูล",Toast.LENGTH_SHORT).show();
                 }
                 if(check == 2){
                     databaseReference.child("name").setValue(edName.getText().toString());
@@ -136,6 +137,7 @@ public class UserInformationViewHolder extends RecyclerView.ViewHolder {
                     databaseReference.child("smell").setValue(edSmell.getText().toString());
                     databaseReference.child("time").setValue(edTime.getText().toString());
                     databaseReference.child("date").setValue(edDate.getText().toString());
+                    Toast.makeText(mView.getContext(),"แก้ไขข้อมูล",Toast.LENGTH_SHORT).show();
                 }
                 dialog.cancel();
             }

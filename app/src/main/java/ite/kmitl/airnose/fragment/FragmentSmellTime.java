@@ -1,4 +1,4 @@
-package ite.kmitl.enose.fragment;
+package ite.kmitl.airnose.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,13 +11,11 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-import java.util.Date;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 
 @SuppressWarnings("unused")

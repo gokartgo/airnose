@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="ite.kmitl.enose">
+    package="ite.kmitl.airnose">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -10,7 +10,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
-        android:name=".MainApplication"
+        android:name="ite.kmitl.airnose.MainApplication"
         android:allowBackup="true"
         android:icon="@mipmap/icon_airnose"
         android:label="@string/app_name"
@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".activity.LoginActivity"
+            android:name="ite.kmitl.airnose.activity.LoginActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden">
             <intent-filter>
@@ -40,14 +40,14 @@
             android:value="@string/google_maps_key" />
 
         <activity
-            android:name=".activity.MapsActivity"
+            android:name="ite.kmitl.airnose.activity.MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name="ite.kmitl.airnose.activity.MainActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="adjustResize|stateHidden" />
-        <activity android:name=".activity.AdminActivity" />
-        <activity android:name=".activity.StaffActivity"></activity>
+        <activity android:name="ite.kmitl.airnose.activity.AdminActivity" />
+        <activity android:name="ite.kmitl.airnose.activity.StaffActivity"></activity>
     </application>
 
 </manifest>

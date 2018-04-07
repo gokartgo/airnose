@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="ite.kmitl.enose.activity.AdminActivity">
+    tools:context="ite.kmitl.airnose.activity.AdminActivity">
     
     <android.support.v7.widget.RecyclerView
         android:id="@+id/userList"

@@ -1,4 +1,4 @@
-package ite.kmitl.enose.holder;
+package ite.kmitl.airnose.holder;
 
 import android.app.Dialog;
 import android.support.v7.widget.RecyclerView;
@@ -6,15 +6,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.database.DatabaseReference;
 
-import org.w3c.dom.Text;
-
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 /**
  * Created by ASUS-PC on 18/1/2561.

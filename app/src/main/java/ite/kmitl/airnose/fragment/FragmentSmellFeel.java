@@ -1,4 +1,4 @@
-package ite.kmitl.enose.fragment;
+package ite.kmitl.airnose.fragment;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -7,9 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-import android.widget.Toast;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 
 @SuppressWarnings("unused")

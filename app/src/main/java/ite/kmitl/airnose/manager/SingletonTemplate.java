@@ -1,4 +1,4 @@
-package ite.kmitl.enose.manager;
+package ite.kmitl.airnose.manager;
 
 import android.content.Context;
 

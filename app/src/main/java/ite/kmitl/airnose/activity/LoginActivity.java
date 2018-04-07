@@ -1,4 +1,4 @@
-package ite.kmitl.enose.activity;
+package ite.kmitl.airnose.activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +10,7 @@ import android.widget.Toast;
 
 import com.karan.churi.PermissionManager.PermissionManager;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 public class LoginActivity extends AppCompatActivity {
 

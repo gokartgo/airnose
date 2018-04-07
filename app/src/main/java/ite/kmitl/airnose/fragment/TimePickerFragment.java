@@ -1,4 +1,4 @@
-package ite.kmitl.enose.fragment;
+package ite.kmitl.airnose.fragment;
 
 import android.app.Dialog;
 import android.app.DialogFragment;
@@ -10,7 +10,7 @@ import android.widget.TimePicker;
 
 import java.util.Calendar;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 /**
  * Created by ASUS-PC on 24/12/2560.

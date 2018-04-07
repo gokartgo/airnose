@@ -1,4 +1,4 @@
-package ite.kmitl.enose.fragment;
+package ite.kmitl.airnose.fragment;
 
 import android.Manifest;
 import android.content.DialogInterface;
@@ -10,10 +10,8 @@ import android.location.Location;
 import android.location.LocationManager;
 import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AlertDialog;
@@ -41,14 +39,12 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import org.w3c.dom.Text;
-
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.List;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 
 @SuppressWarnings("unused")

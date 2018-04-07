@@ -1,4 +1,4 @@
-package ite.kmitl.enose.activity;
+package ite.kmitl.airnose.activity;
 
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -10,7 +10,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

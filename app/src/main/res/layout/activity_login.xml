@@ -7,7 +7,7 @@
     android:gravity="center_horizontal"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context="ite.kmitl.enose.activity.LoginActivity">
+    tools:context="ite.kmitl.airnose.activity.LoginActivity">
 
     <ScrollView
         android:layout_width="match_parent"

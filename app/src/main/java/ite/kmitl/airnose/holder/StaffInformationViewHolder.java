@@ -1,10 +1,10 @@
-package ite.kmitl.enose.holder;
+package ite.kmitl.airnose.holder;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.widget.TextView;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 /**
  * Created by ASUS-PC on 18/1/2561.

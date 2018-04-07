@@ -1,4 +1,4 @@
-package ite.kmitl.enose.fragment;
+package ite.kmitl.airnose.fragment;
 
 import android.app.Dialog;
 import android.os.Bundle;
@@ -14,7 +14,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 
 @SuppressWarnings("unused")

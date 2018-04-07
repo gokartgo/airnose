@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "996886910596",
+    "project_number": "378524244741",
     "firebase_url": "https://airnoseandroid.firebaseio.com",
-    "project_id": "airnoseandroid",
-    "storage_bucket": "airnoseandroid.appspot.com"
+    "project_id": "airnose2",
+    "storage_bucket": "airnose2.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:996886910596:android:6279b5bdce66d4df",
+        "mobilesdk_app_id": "1:378524244741:android:75346f5a3275c0d4",
         "android_client_info": {
-          "package_name": "ite.kmitl.enose"
+          "package_name": "ite.kmitl.airnose"
         }
       },
       "oauth_client": [
         {
-          "client_id": "996886910596-db9me6lqnorqrs6mlg15ui6jrbfurhcp.apps.googleusercontent.com",
+          "client_id": "378524244741-0vpdvuheu2jf8qpg2rh7i5tlb3ijgdge.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC-Fey4ZAHRkOUPUCRIK7njF3pKqD760m8"
+          "current_key": "AIzaSyAM3DQd-2NUf0FtHHF61qa7bNK1BKMUaaE"
         }
       ],
       "services": {

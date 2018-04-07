@@ -1,4 +1,4 @@
-package ite.kmitl.enose.activity;
+package ite.kmitl.airnose.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,12 +9,11 @@ import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import ite.kmitl.enose.R;
-import ite.kmitl.enose.dao.UserInformationData;
-import ite.kmitl.enose.holder.StaffInformationViewHolder;
-import ite.kmitl.enose.holder.UserInformationViewHolder;
+import ite.kmitl.airnose.R;
+import ite.kmitl.airnose.holder.UserInformationViewHolder;
+import ite.kmitl.airnose.dao.UserInformationData;
 
-public class StaffActivity extends AppCompatActivity {
+public class AdminActivity extends AppCompatActivity {
 
     private RecyclerView mUserList;
 
@@ -26,7 +25,7 @@ public class StaffActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_staff);
+        setContentView(R.layout.activity_admin);
 
         // declare database reference object
         database = FirebaseDatabase.getInstance();
@@ -34,25 +33,36 @@ public class StaffActivity extends AppCompatActivity {
 
 
         mUserList = (RecyclerView) findViewById(R.id.userList);
+
+
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseRecyclerAdapter<UserInformationData,StaffInformationViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<UserInformationData, StaffInformationViewHolder>(
+        final FirebaseRecyclerAdapter<UserInformationData,UserInformationViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<UserInformationData, UserInformationViewHolder>(
                 UserInformationData.class
-                ,R.layout.view_user_information_staff
-                ,StaffInformationViewHolder.class
+                ,R.layout.view_user_information
+                ,UserInformationViewHolder.class
                 ,databaseReference
         ) {
-
             @Override
-            protected void populateViewHolder(StaffInformationViewHolder viewHolder, UserInformationData model, int position) {
-                viewHolder.setTime(model.getTime());
-                viewHolder.setDate(model.getDate());
+            protected void populateViewHolder(UserInformationViewHolder viewHolder, UserInformationData model, int position) {
+                viewHolder.setName(model.getName());
+                viewHolder.setPhone(model.getPhone());
                 viewHolder.setComment(model.getComment());
+                viewHolder.setDate(model.getDate());
+                viewHolder.setDuration(model.getDuration());
+                viewHolder.setLevel(model.getLevel());
+                viewHolder.setLocation(model.getLocation());
+                viewHolder.setSmell(model.getSmell());
+                viewHolder.setTime(model.getTime());
+                viewHolder.databaseReference = getRef(position);
+                viewHolder.setBtnDelete();
+                viewHolder.setBtnEdit();
             }
         };
+
 
         mUserList.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);

@@ -1,4 +1,4 @@
-package ite.kmitl.enose.view;
+package ite.kmitl.airnose.view;
 
 import android.annotation.TargetApi;
 import android.content.Context;
@@ -10,7 +10,7 @@ import android.util.AttributeSet;
 import com.inthecheesefactory.thecheeselibrary.view.BaseCustomViewGroup;
 import com.inthecheesefactory.thecheeselibrary.view.state.BundleSavedState;
 
-import ite.kmitl.enose.R;
+import ite.kmitl.airnose.R;
 
 
 public class CustomViewGroupTemplate extends BaseCustomViewGroup {

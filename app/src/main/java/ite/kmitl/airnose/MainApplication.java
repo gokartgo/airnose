@@ -1,4 +1,4 @@
-package ite.kmitl.enose;
+package ite.kmitl.airnose;
 
 import android.app.Application;
 

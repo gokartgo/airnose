@@ -276,8 +276,6 @@ public class MainFragment extends Fragment {
         btnDialogConfirm.setOnClickListener(btnDialogClick);
         dialog.show();
 
-
-
     }
 
     /*********

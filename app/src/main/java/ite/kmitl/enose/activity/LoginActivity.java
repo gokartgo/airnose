@@ -56,11 +56,11 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
             if(view == btnAdmin){
-                if(edIdAdmin.getText().toString().equals("admin") && edPasswordAdmin.getText().toString().equals("1234")){
+                if(edIdAdmin.getText().toString().equals("admin") && edPasswordAdmin.getText().toString().equals("airkmitl2016")){
                     Intent intent = new Intent(LoginActivity.this,AdminActivity.class);
                     startActivity(intent);
                 }
-                else if(edIdAdmin.getText().toString().equals("staff") && edPasswordAdmin.getText().toString().equals("1234")){
+                else if(edIdAdmin.getText().toString().equals("staff") && edPasswordAdmin.getText().toString().equals("airkmitl2016")){
                     Intent intent = new Intent(LoginActivity.this,StaffActivity.class);
                     startActivity(intent);
                 }

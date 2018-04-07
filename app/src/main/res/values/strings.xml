@@ -74,4 +74,8 @@
     <string name="gps_open_yes">ตกลง</string>
     <string name="gps_open_no">ยกเลิก</string>
 
+    <!-- admin -->
+    <string name="admin_delete_data">ลบข้อมูล</string>
+    <string name="admin_edit_data">แก้ไขข้อมูล</string>
+
 </resources>

@@ -1,8 +1,16 @@
 package ite.kmitl.enose.holder;
 
+import android.app.Dialog;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
+import android.view.Window;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.database.DatabaseReference;
 
 import org.w3c.dom.Text;
 
@@ -15,6 +23,9 @@ import ite.kmitl.enose.R;
 public class UserInformationViewHolder extends RecyclerView.ViewHolder {
 
     View mView;
+    EditText edName,edPhone,edComment,edDate,edDuration,edLevel,edLocation,edSmell,edTime;
+    int check;
+    public DatabaseReference databaseReference;
 
     public UserInformationViewHolder(View itemView) {
         super(itemView);
@@ -22,47 +33,113 @@ public class UserInformationViewHolder extends RecyclerView.ViewHolder {
     }
 
     public void setName(String text) {
-        TextView tvName = (TextView) mView.findViewById(R.id.tvName);
-        tvName.setText("Name : "+text);
+        edName = (EditText) mView.findViewById(R.id.edName);
+        edName.setText(text);
     }
 
     public void setPhone(String text) {
-        TextView tvPhone = (TextView) mView.findViewById(R.id.tvPhone);
-        tvPhone.setText("Phone : "+text);
+        edPhone = (EditText) mView.findViewById(R.id.edPhone);
+        edPhone.setText(text);
     }
 
     public void setComment(String text) {
-        TextView tvComment = (TextView) mView.findViewById(R.id.tvComment);
-        tvComment.setText("Comment : "+text);
+        edComment = (EditText) mView.findViewById(R.id.edComment);
+        edComment.setText(text);
     }
 
     public void setDate(String text){
-        TextView tvDate = (TextView) mView.findViewById(R.id.tvDate);
-        tvDate.setText("Date : "+text);
+        edDate = (EditText) mView.findViewById(R.id.edDate);
+        edDate.setText(text);
     }
 
     public void setDuration(String text){
-        TextView tvDuration = (TextView) mView.findViewById(R.id.tvDuration);
-        tvDuration.setText("Duration : "+text);
+        edDuration = (EditText) mView.findViewById(R.id.edDuration);
+        edDuration.setText(text);
     }
 
     public void setLevel(String text) {
-        TextView tvLevel = (TextView) mView.findViewById(R.id.tvlevel);
-        tvLevel.setText("Level : "+text);
+        edLevel = (EditText) mView.findViewById(R.id.edlevel);
+        edLevel.setText(text);
     }
 
     public void setLocation(String text){
-        TextView tvLocation = (TextView) mView.findViewById(R.id.tvLocation);
-        tvLocation.setText("Location : "+text);
+        edLocation = (EditText) mView.findViewById(R.id.edLocation);
+        edLocation.setText(text);
     }
 
     public void setSmell(String text){
-        TextView tvSmell = (TextView) mView.findViewById(R.id.tvSmell);
-        tvSmell.setText("Smell : "+text);
+        edSmell = (EditText) mView.findViewById(R.id.edSmell);
+        edSmell.setText(text);
     }
 
     public void setTime(String text){
-        TextView tvTime = (TextView) mView.findViewById(R.id.tvTime);
-        tvTime.setText("Time : "+text);
+        edTime = (EditText) mView.findViewById(R.id.edTime);
+        edTime.setText(text);
+    }
+
+    // delete data
+
+    public void setBtnDelete(){
+        Button btnDelete = (Button) mView.findViewById(R.id.btnDelete);
+        btnDelete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog("ลบข้อมูล",1);
+            }
+        });
+    }
+
+
+    // edit data
+    public void setBtnEdit(){
+        Button btnEdit = (Button) mView.findViewById(R.id.btnEdit);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                showDialog("แก้ไขข้อมูล",2);
+            }
+        });
+    }
+
+    private void showDialog(String text,int value) {
+        check = value;
+        final Dialog dialog = new Dialog(mView.getContext());
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.setContentView(R.layout.dialog_admin_delete);
+        dialog.setCancelable(true);
+        dialog.setCanceledOnTouchOutside(true);
+        // set dialog
+        TextView tvDialogAdminText = (TextView) dialog.findViewById(R.id.tvDialogAdminText);
+        Button btnDialogCancel = (Button) dialog.findViewById(R.id.btnDialogCancel);
+        Button btnDialogConfirm = (Button) dialog.findViewById(R.id.btnDialogConfirm);
+
+        tvDialogAdminText.setText(text);
+        btnDialogCancel.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.cancel();
+            }
+        });
+        btnDialogConfirm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(check == 1) {
+                    databaseReference.removeValue();
+                }
+                if(check == 2){
+                    databaseReference.child("name").setValue(edName.getText().toString());
+                    databaseReference.child("phone").setValue(edPhone.getText().toString());
+                    databaseReference.child("comment").setValue(edComment.getText().toString());
+                    databaseReference.child("duration").setValue(edDuration.getText().toString());
+                    databaseReference.child("level").setValue(edLevel.getText().toString());
+                    databaseReference.child("location").setValue(edLocation.getText().toString());
+                    databaseReference.child("smell").setValue(edSmell.getText().toString());
+                    databaseReference.child("time").setValue(edTime.getText().toString());
+                    databaseReference.child("date").setValue(edDate.getText().toString());
+                }
+                dialog.cancel();
+            }
+        });
+        dialog.show();
     }
 }

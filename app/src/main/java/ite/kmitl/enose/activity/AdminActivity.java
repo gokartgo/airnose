@@ -41,7 +41,7 @@ public class AdminActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        FirebaseRecyclerAdapter<UserInformationData,UserInformationViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<UserInformationData, UserInformationViewHolder>(
+        final FirebaseRecyclerAdapter<UserInformationData,UserInformationViewHolder> firebaseRecyclerAdapter = new FirebaseRecyclerAdapter<UserInformationData, UserInformationViewHolder>(
                 UserInformationData.class
                 ,R.layout.view_user_information
                 ,UserInformationViewHolder.class
@@ -58,8 +58,12 @@ public class AdminActivity extends AppCompatActivity {
                 viewHolder.setLocation(model.getLocation());
                 viewHolder.setSmell(model.getSmell());
                 viewHolder.setTime(model.getTime());
+                viewHolder.databaseReference = getRef(position);
+                viewHolder.setBtnDelete();
+                viewHolder.setBtnEdit();
             }
         };
+
 
         mUserList.setHasFixedSize(true);
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
